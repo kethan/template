@@ -1,0 +1,49 @@
+{
+	"name": "@kethan/template",
+	"description": "template for creating libraries",
+	"version": "0.0.1",
+	"type": "module",
+	"source": "./src/index.js",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"unpkg": "./dist/index.min.js",
+	"umd:main": "./dist/index.umd.js",
+	"exports": {
+		".": {
+			"browser": "./dist/index.es.js",
+			"umd": "./dist/index.umd.js",
+			"require": "./dist/index.js",
+			"import": "./dist/index.es.js",
+			"default": "./dist/index.es.js"
+		},
+		"./lite": "./lite/index.js",
+		"./package.json": "./package.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kethan/template.git"
+	},
+	"scripts": {
+		"build": "rollup --config rollup.config.js",
+		"test": "vitest",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@rollup/plugin-terser": "^0.4.4",
+		"husky": "^9.1.4",
+		"rollup": "^4.20.0",
+		"vitest": "^2.0.5"
+	},
+	"keywords": [
+		"template",
+		"libraries",
+		"module",
+		"library"
+	],
+	"author": "Kethan Surana",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kethan/template/issues"
+	},
+	"homepage": "https://github.com/kethan/template#readme"
+}
