@@ -4,7 +4,7 @@ const resolve = (pkg, input = "src/index", output = "dist/index") => ({
 	input: `${input}.js`,
 	output: [
 		{
-			file: `${output}.js`,
+			file: `${output}.es.js`,
 			format: 'es',
 		},
 		{
