@@ -1,10 +1,10 @@
 {
 	"name": "@kethan/template",
 	"description": "template for creating libraries",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"type": "module",
 	"source": "./src/index.js",
-	"main": "./dist/index.cjs",
+	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"unpkg": "./dist/index.min.js",
 	"umd:main": "./dist/index.umd.js",
@@ -30,6 +30,7 @@
 	},
 	"devDependencies": {
 		"@rollup/plugin-terser": "^0.4.4",
+		"rollup-plugin-bundle-size": "^1.0.3",
 		"husky": "^9.1.4",
 		"rollup": "^4.20.0",
 		"vitest": "^2.0.5"
@@ -45,5 +46,8 @@
 	"bugs": {
 		"url": "https://github.com/kethan/template/issues"
 	},
-	"homepage": "https://github.com/kethan/template#readme"
+	"homepage": "https://github.com/kethan/template#readme",
+	"dependencies": {
+		"rollup-plugin-bundle-size": "^1.0.3"
+	}
 }
